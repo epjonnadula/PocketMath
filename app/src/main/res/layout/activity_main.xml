@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="1">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Unit\nConverter"
+        android:id="@+id/button_converter_main"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_effect_1"
+        android:textSize="25dp"
+        android:textColor="@color/ripple_orange"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Scientific\nCalculator"
+        android:layout_weight="1"
+        android:id="@+id/button_calculator_main"
+        android:background="@drawable/ripple_effect_2"
+        android:textSize="25dp"
+        android:textColor="#fff"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Linear\nEquations"
+            android:id="@+id/button_linear_main"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect_2"
+            android:textSize="25dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Number\nSystem"
+            android:layout_weight="1"
+            android:id="@+id/button_number_main"
+            android:background="@drawable/ripple_effect_1"
+            android:textSize="25dp"
+            android:textColor="@color/ripple_orange"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Processor Speed"
+            android:background="@drawable/gradient"
+            android:textSize="25dp"
+            android:textColor="#fff"
+
+            android:id="@+id/button_processor"
+            android:layout_weight="1"
+
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

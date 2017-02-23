@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jonnadulaprithvi.pocketmath.HexadecimalActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hexa\nDecimal"
+        android:id="@+id/textView13"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Binary"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Decimal"
+        android:id="@+id/textView15"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Octal"
+        android:id="@+id/textView16"
+        android:layout_above="@+id/button_hexadecimal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="75dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="convert"
+        android:id="@+id/button_hexadecimal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple_effect"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_hexadecimal"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/button_hexadecimal"
+        android:layout_alignStart="@+id/button_hexadecimal"
+        android:maxLength="7"
+        android:digits="0123456789abcdefABCDEF"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textMultiLine"
+        android:textColor="#000"
+        android:enabled="false"
+        android:ems="10"
+        android:background="@android:color/transparent"
+        android:id="@+id/hexadecimal_to_binary"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignRight="@+id/editText_hexadecimal"
+        android:layout_alignEnd="@+id/editText_hexadecimal"
+        android:layout_below="@+id/editText_hexadecimal"
+        android:text="0000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textMultiLine"
+        android:textColor="#000"
+        android:enabled="false"
+        android:ems="10"
+        android:background="@android:color/transparent"
+        android:id="@+id/hexadecimal_to_decimal"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView14"
+        android:text="0000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textMultiLine"
+        android:textColor="#000"
+        android:enabled="false"
+        android:ems="10"
+        android:background="@android:color/transparent"
+        android:id="@+id/hexadecimal_to_octal"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/hexadecimal_to_decimal"
+        android:text="0000" />
+</RelativeLayout>

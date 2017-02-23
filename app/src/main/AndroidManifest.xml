@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jonnadulaprithvi.pocketmath">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TAndCActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AreaActivity"
+            android:label="Area"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DigitalStorageActivity"
+            android:label="Digital Storage"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnergyActivity"
+            android:label="Energy"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LengthActivity"
+            android:label="Length"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpeedActivity"
+            android:label="Speed"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TemperatureActivity"
+            android:label="Temperature"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeActivity"
+            android:label="Time"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VolumeActivity"
+            android:label="Volume"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WeightActivity"
+            android:label="Weight"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="About"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="Feedback"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RateUsActivity"
+            android:label="Rate Us"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PressureActivity"
+            android:label="Pressure"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FrequencyActivity"
+            android:label="Frequency"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlaneAngleActivity"
+            android:label="Plane Angle"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConverterMainActivity"
+            android:label="Converter"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalculatorMainActivity"
+            android:label="calculator"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NumberSystemMainActivity"
+            android:label="Number System"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LinearEquationMainActivity"
+            android:label="Linear Equations"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HistoryConverterActivity"
+            android:label="History"
+            android:parentActivityName=".ConverterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Variable2Activity"
+            android:label="2 Variables"
+            android:parentActivityName=".LinearEquationMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Variable3Activity"
+            android:label="3 Variables"
+            android:parentActivityName=".LinearEquationMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BinaryActivity"
+            android:label="Binary Number System"
+            android:parentActivityName=".NumberSystemMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DecimalActivity"
+            android:label="Decimal Number System"
+            android:parentActivityName=".NumberSystemMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OctalActivity"
+            android:label="Octal Number System"
+            android:parentActivityName=".NumberSystemMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HexadecimalActivity"
+            android:label="Hexadecimal Number System"
+            android:parentActivityName=".NumberSystemMainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ProcessorActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Processor Speed"/>
+    </application>
+
+</manifest>

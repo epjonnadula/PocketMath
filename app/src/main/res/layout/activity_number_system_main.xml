@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="binary"
+            android:id="@+id/binary"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect_2"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="decimal"
+            android:id="@+id/decimal"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect_1"
+            android:textSize="30dp"
+            android:textColor="@color/ripple_orange"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="octal"
+            android:id="@+id/octal"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect_1"
+            android:textSize="30dp"
+            android:textColor="@color/ripple_orange"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="hexa\ndecimal"
+            android:id="@+id/hexadecimal"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:background="@drawable/ripple_effect_2"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</LinearLayout>
